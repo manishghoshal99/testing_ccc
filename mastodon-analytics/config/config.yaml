@@ -1,0 +1,16 @@
+# Mastodon Data Analytics Configuration
+
+# Input file paths
+input_files:
+  small: "/data/gpfs/projects/COMP90024/mastodon-106k.ndjson"
+  medium: "/data/gpfs/projects/COMP90024/mastodon-16m.ndjson"
+  large: "/data/gpfs/projects/COMP90024/mastodon-144Gb.ndjson"
+
+# Output configuration
+output:
+  directory: "./results"
+  
+# Processing parameters
+processing:
+  chunk_size: 10000
+  top_n: 5
